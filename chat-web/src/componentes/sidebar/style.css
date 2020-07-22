@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&family=Ubuntu:ital,wght@0,400;0,500;1,300&display=swap');
+
+.sidebar{
+    margin-top:40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    height: 100vh;
+}
+.div-perfil{
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    width: 100%;
+    max-width: 300px;
+}
+.div-image-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 125px;
+}
+.div-image-perfil img{
+    max-width:55px ;
+    border-radius: 24px;
+}
+.div-data-pefil{
+    width: 150px;
+}
+.div-data-pefil{
+    text-align: center;
+   display: flex;
+   flex-direction: column;
+ 
+}
+.div-data-pefil label:first-child{
+    font-family: 'font-family: 'Roboto', sans-serif';
+    font-weight: bold;
+    font-size: 15px;
+    color: #1492E6; 
+ 
+ }
+.div-data-pefil label:last-child{
+    font-family: 'font-family: 'Roboto', sans-serif';
+    font-weight: bold;
+    color: #A4A4A4; 
+    font-size: 13px;
+ 
+ }
+.div-data-pefil label{
+    font-weight: bold;
+
+   margin-top: 5px;
+
+}
+.div-editar-perfil{
+    display: flex;
+    width: 80px;
+}   
+.div-editar-perfil button{
+   margin: 5px;
+   border: none;
+   padding: 5px;
+   width: 50px;
+   cursor: pointer;
+}
+.div-editar-perfil button:focus{
+ 
+   border: none;
+
+}
+
+.div-editar-perfil img{
+    margin-top: 10px;
+    max-width: 17px;
+    color: #656565;
+}
+.div-editar-perfil {
+   display: flex;
+   flex-direction: row-reverse;
+   align-content:stretch;
+   align-items: baseline;
+}
+.div-search-friends{
+    display: flex;
+    flex-direction: row;
+    height: 95px;
+
+    
+}
+.form-search-friends{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+
+}
+.form-search-friends input{
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    width: 350px;
+    border-radius: 25px;
+    background-image: url('../../utils/search.png'); 
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 260px ;
+    
+}
+
+.form-search-friends input::placeholder{
+    
+    color: #A4A4A4;
+}
+
+.div-list-friends{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  overflow-y: scroll; 
+    max-height: 591px;
+    max-width: 500px;
+}
+.div-list-friends img{
+    max-width:55px ;
+}
+
+.item-list-friends{
+display: flex;
+max-width: 400px;
+height: 100px;
+cursor: pointer;
+}
+.item-photo{
+    width: 60px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.item-photo img{
+    margin-top: -35px;
+    width: 50px;
+}
+.item-data{
+    margin-left: 5px;
+    width: 200px;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.item-time{
+    display: flex;
+    flex-direction: column;
+}
+.item-time label:first-child{
+    font-size: 10px;
+    font-style: italic;
+}
+.item-data label{
+    padding-top: 15px;
+    font-size: 13px;
+    color: #8F8F8F;
+}
+.item-data h5{
+    font-size: 18px;
+    color: #1492E6;
+}
+.item-time #notificacao{
+    font-size: 10px;
+    padding-top: 1px;
+    text-align: center;
+    color: white;
+    width: 15px;
+    height: 15px;
+    margin-top: 14px;
+    border-radius: 10px;
+    background-color: #1492E6;
+    
+}
+#div-search-fried{
+    background-color:#f0eeee;
+    height:60px
+}

@@ -1,0 +1,18 @@
+.dropzone{
+  height: 110px;
+  background-color: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: medium;
+  border-style: dashed;
+  border-color: #D7D5D5;
+}
+.div-preview-image{
+  margin-top: 20px;
+  display: flex;
+}
+.div-preview-image img{
+  width: 100px;
+  height: 100px;
+}

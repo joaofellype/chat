@@ -1,0 +1,50 @@
+.div-aside{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    
+}
+.div-aside-perfil{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div-aside-perfil img{
+    width: 150px;
+}
+
+.div-aside-perfil ul{
+    margin-top: 20px;
+    list-style: none;
+}
+.div-aside-perfil ul li{
+   font-size: 15px;
+   color: #757575;
+}
+.div-aside-call{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.div-aside-call div{
+    margin: 20px;
+    padding: 10px;
+}
+
+.div-aside-call div img{
+    background-color: #D8F3FF;
+    width: 65px;
+    padding: 10px;
+border-radius: 39px ;
+}
+.div-aside-call div p{
+    font-size: 13pxs;
+    margin-top: 5px;
+    text-align: center;
+    color: #A4A4A4;
+}

@@ -1,0 +1,61 @@
+#div-form-login{
+    width: 100%;
+    max-width: 580px;
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+}
+.form-login{
+    display: flex;
+    flex-direction: column;
+}
+.form-login form{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 490px;
+    
+}
+.div-text{
+    margin-top: 60px;
+    display:flex;
+    flex-direction: column;
+     
+}
+.div-text h2,h4{
+    margin-left: 50px;
+}
+.form-login form .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.form-login .field input[type="email"], input[type="password"]{
+  
+    border: 1px #707070 solid;
+    border-radius: 13px;
+    padding: 16px;
+    color: #aaaaaa;
+}
+.field label{
+    margin-bottom: 10px;
+    margin-left: 5px;
+    
+}
+.form-login form a{
+   align-self: flex-end;
+   color: #b3b3b3;
+}
+
+form button{
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #337CFD;
+    color: white;
+    font-size: 15px;
+}
+.div-signup span{
+    margin-left: 42px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>ChatJS - FrontEnd Magazine - DevMedia</title>
+     <link rel="stylesheet" type="text/css" href="/views/style.css" />
+</head>
+<body>
+     <div id="historico_mensagens"></div>
+     <div class="form">
+         <input type='text' id='texto_mensagem' name='texto_mensagem' />
+         <input type='submit' id="buton" value='Enviar mensagem!' />    
+     </div>
+     <div id='acesso_usuario'>
+        <div class="form" id="login">
+            <input type='text' placeholder='Insira seu apelido' name='apelido' id='apelido' />
+            <input type='button' id="enter_user" value='Entrar' />
+        </div>
+   </div>
+
+        <input type="hidden" value="" id="escondido" />
+ 
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+     <script type="text/javascript">
+
+        $(function(){
+            var socket = io();
+ $("#buton").click(function(){
+     alert('ksnjdkjs')
+     const dados ={
+          apelido:$('#escondido').val(),
+          mensagem:$("#texto_mensagem").val()
+     };
+      socket.emit("enviar mensagem", dados , function(valido){
+          
+          if(!valido){
+               alert("Nome já utilizado nesta sala");
+
+          }else{
+               $("form#chat #texto_mensagem").val("");
+          }
+           
+      });
+ });
+ socket.on("atualizar mensagens", function(mensagem){
+var mensagem_formatada = $("<p />").text(mensagem);
+$("#historico_mensagens").append(mensagem_formatada);
+});
+$("#enter_user").click(function(){
+     socket.emit("entrar", $("#apelido").val(), function(valido){
+         if(valido){
+              $('#escondido').val($("#apelido").val())
+              $("#acesso_usuario").hide();
+              $("#sala_chat").show();
+         }else{
+              $("#acesso_usuario").val("");
+              alert("Nome já utilizado nesta sala");
+         }
+     });
+});
+        })
+        
+ 
+</script>
+</body>
+</html>

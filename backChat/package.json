@@ -1,0 +1,39 @@
+{
+  "name": "backChat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -w src --exec \"babel-node src  --presets env",
+    "build": "rimraf  dist && babel src -s -D -d dist --presets env",
+    "start": "node dist",
+    "knex:seed": "knex --knexfile knexfile.ts seed:run",
+    "knex:migrate": "knex migrate:latest --knexfile knexfile.js migrate:latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.1",
+    "multer": "^1.4.2",
+    "objection": "^2.2.0",
+    "pg": "^8.2.1",
+    "sharp": "^0.25.4",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.3",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.4",
+    "rimraf": "^3.0.2"
+  }
+}
